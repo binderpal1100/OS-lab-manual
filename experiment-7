@@ -1,0 +1,22 @@
+*EXP: 7*
+
+EXPERIMENT 7: CPU-Bound and I/O-Bound Processes
+
+Theory:
+- CPU-bound process: A process that spends most of its time performing calculations and uses a large amount of CPU time.
+- I/O-bound process: A process that spends most of its time performing input/output operations.
+- CPU usage: The portion of CPU time used by a process.
+- top: Displays running processes, CPU usage, memory usage and process status.
+- top -p PID: Monitors a specific process.
+- pgrep: Finds the PID of a process by its name.
+
+Commands
+nano exp7a.c
+nano exp7b.c
+gcc exp7a.c -o exp7a
+gcc exp7b.c -o exp7b
+./exp7a
+./exp7b
+top
+top -p PID
+pgrep -a exp7a
