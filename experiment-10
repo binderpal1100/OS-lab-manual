@@ -1,0 +1,11 @@
+*EXP: 10*
+
+EXPERIMENT 10: Address of Variables and Virtual Memory
+
+Theory:
+- &: Gives the memory address of a variable.
+- Virtual Address Space: When multiple instances of a program run simultaneously, each process has its own isolated virtual memory address space. These map to physical RAM locations.
+- while(1): An infinite loop that keeps the process running in the background.
+- sleep(1): Pauses program execution for one second.
+- int var = 42: Declares and initializes a local integer variable stored on the process's stack memory.
+- fflush(stdout): Flushes the output stream so that text prints to the terminal immediately.
