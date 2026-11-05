@@ -1,0 +1,20 @@
+*EXP: 6*
+
+Experiment 6 : Dynamic Memory Allocation and Memory Usage
+
+Theory:
+- stdlib.h: Header file providing functions for memory allocation and program termination.
+- unistd.h: Header file providing access to operating system functions.
+- argc: Represents the number of command-line arguments.
+- atoi(): Converts a string into an integer.
+- malloc(): Dynamically allocates memory during program execution.
+- free(): Releases dynamically allocated memory.
+- free -h: Displays system memory usage in human-readable format.
+- watch -n 1 free -h: Displays updated memory usage every second.
+
+commands
+nano exp6.c
+gcc exp6.c -o exp6
+./exp6 100
+free -h
+watch -n 1 free -h
