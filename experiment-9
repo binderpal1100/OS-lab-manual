@@ -1,0 +1,15 @@
+*EXP: 9*
+
+EXPERIMENT 9: Process Creation Using fork() and wait()
+
+Theory:
+- #include <sys/wait.h>: Header file required for process control functions like wait().
+- fork(): Creates a new child process by duplicating the parent process. It returns 0 to the child and the child's PID to the parent.
+- getpid(): Returns the unique process ID of the currently running process.
+- wait(NULL): Suspends the parent process until its child process finishes execution.
+- exit(0): Terminates the child process and returns a success status to the operating system.
+
+Commands
+nano exp9.c
+gcc exp9.c -o exp9
+./exp9
