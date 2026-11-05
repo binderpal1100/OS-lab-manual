@@ -1,0 +1,17 @@
+*EXP: 8*
+
+EXPERIMENT 8: Process Memory Map
+
+Theory:
+- Process Memory Map: Represents the memory regions allocated to a process during execution.
+- pmap: Displays the memory map of a process using its process ID (PID).
+- Memory Regions: A process memory map may contain program code, data, heap, stack and shared libraries.
+- pmap -x PID: Displays an extended memory map, including mapped memory, resident memory (RSS) and dirty memory.
+- Resident Set Size (RSS): Amount of process memory currently residing in physical RAM.
+- Dirty Memory: Memory pages that have been modified and may need to be written back to storage.
+
+Commands
+./exp7a
+pgrep -a exp7a
+pmap PID
+pmap -x PID
